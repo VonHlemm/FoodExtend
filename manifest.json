@@ -1,24 +1,16 @@
 {
   "manifest_version": 2,
 
-  "name": "Food Manifest",
-  "description": "This extension helps you to document your gulping during the day.",
+  "name": "My daily bread",
+  "description": "This extension shows what I eat.",
   "version": "1.0",
 
-   "permissions": [
-    "activeTab",
-    "widgets"
-  ],
-
-    "web_accessible_resources": [
-    "icon.png"
-  ],
-
-  "background": {
-    "scripts": ["food.js"]
-  }
-
   "browser_action": {
-    "default_title": "Food-Manifest"
-  }
+    "default_icon": "Piece-of-cake-icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "http://fast-harbor-7585.herokuapp.com/"
+  ]
 }
